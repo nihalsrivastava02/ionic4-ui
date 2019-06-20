@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <form #form="ngForm" (ngSubmit)="register(form)" method="post">
+    <ion-item lines="none">
+        <ion-label position="floating">Email</ion-label>
+        <ion-input ngModel name="email" name="email"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" ngModel name="password"></ion-input>
+    </ion-item>
+  
+    <ion-item lines="none">
+      <ion-label position="floating">User Name</ion-label>
+      <ion-input ngModel name="name" name="name"></ion-input>
+    </ion-item>
+  
+    <ion-item lines="none">
+      <ion-label position="floating">Type</ion-label>
+      <ion-input ngModel name="type" name="type"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="floating">Phone Number</ion-label>
+      <ion-input ngModel name="phoneNO" name="phoneNO"></ion-input>
+    </ion-item>
+  
+    
+  
+    <ion-button type="submit" expand="full" color="danger">Register</ion-button>
+  </form>
+  <p text-center>Already have a account?</p>
+  <ion-button expand="full" color="primary" (click)="loginModal()">Login</ion-button>
+</ion-content>  
